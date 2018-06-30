@@ -41,7 +41,7 @@ Fall back UI will be visible in Production mode. In Develoment mode, you will se
 Published as npm package
 ================
 This is available as an npm package.
-Run <code>npm i error-boundary-react-rc</code> to install it.
+Run <code>npm i error-boundary-react-rsc</code> to install it.
 
 Author
 =============
