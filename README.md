@@ -18,11 +18,16 @@ Error boundaries are React components that catch JavaScript errors anywhere in t
 Usage
 ==========================
  
- <pre><span class="pl-k">import</span><span class="pl-smi"> ErrorBoundary</span><span class="pl-k"> from</span> <span class="pl-s"><span class="pl-pds">'</span>react-error-boundary<span class="pl-pds">'</span></span>;
+ <pre><span class="pl-k">import</span><span class="pl-smi"> ErrorBoundary</span><span class="pl-k"> from</span> <span class="pl-s"><span class="pl-pds">'</span>error-boundary-react-rc<span class="pl-pds">'</span></span>;
 
-&lt;<span class="pl-ent"><span class="pl-c1">ErrorBoundary headerColor="lightseagreen" errorTitle="Error" errorText="Ooops! Something went wrong!" buttonType={['default', 'primary', 'secondary', 'disabled']} buttonLabel={['Ok', 'Continue', 'Close', 'Cancel']}</span></span>&gt;
+&lt;<span class="pl-ent"><span class="pl-c1">ErrorBoundary headerColor="lightseagreen" errorTitle="Error" errorText="Ooops! Something went wrong!" buttonType={['default', 'primary', 'secondary', 'disabled']} buttonLabel={['Ok', 'Continue', 'Close', 'Cancel']} modal={true} autoScrollBodyContent={false} customContentStyle={null}</span></span>&gt;
   &lt;<span class="pl-ent"><span class="pl-c1">Your-Component</span></span> /&gt;
 &lt;/<span class="pl-ent"><span class="pl-c1">ErrorBoundary</span></span>&gt;</pre>
+
+* buttonType: Allows you to decide which button you want on the error dialog. You can keep one or all. Simply provide a blank value for the button type you don't want on the dialog
+* buttonLabel: Allows you to provide labels of your buttons on the dialog. The order of button labels is same as that of your button types.
+* autoScrollBodyContent: When set to true, gives you a vertical scroll on the dialog for its content.
+* customContentStyle: Allows you to override default styling with your custom styling.
  
 
 When error occurs during rendering, in lifecycle methods, and in constructors of the whole tree below them, a material-ui error dialog appears to the end user
