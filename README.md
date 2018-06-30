@@ -27,7 +27,7 @@ Usage
 
 When error occurs during rendering, in lifecycle methods, and in constructors of the whole tree below them, a material-ui error dialog appears to the end user
 
-![alt text](https://github.com/RatneshChauhan/react-error-boundary/blob/master/public/error-boundary-dialog.png "Error Boundary Dialog")
+![alt text](https://github.com/RatneshChauhan/error-boundary-react/blob/master/example.png "Error Boundary Dialog")
 
 Note
 ======
