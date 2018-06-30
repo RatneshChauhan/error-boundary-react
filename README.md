@@ -3,7 +3,7 @@ Simple reusable react error boundary component for React 16+
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-git clone https://github.com/RatneshChauhan/react-error-boundary.git
+git clone https://github.com/RatneshChauhan/error-boundary-react.git
 
 Title
 ==============
