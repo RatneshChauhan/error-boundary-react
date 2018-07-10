@@ -43,6 +43,8 @@ Published as npm package
 This is available as an npm package.
 Run <code>npm i react-error-boundary-component-fallback</code> to install it.
 
+https://www.npmjs.com/package/react-error-boundary-component-fallback
+
 Author
 =============
 Ratnesh Chauhan, Full Stack Developer
