@@ -24,7 +24,7 @@ Usage
   &lt;<span class="pl-ent"><span class="pl-c1">Your-Component</span></span> /&gt;
 &lt;/<span class="pl-ent"><span class="pl-c1">ErrorBoundary</span></span>&gt;</pre>
 
-* buttonType: Allows you to decide which button you want on the error dialog. You can keep one or all. Simply provide a blank value for the button type you don't want on the dialog
+* buttonType: Allows you to decide which button you want on the error dialog. You can keep one, two... or all. Simply provide a blank value for the button type you don't want on the dialog. Make sure to set the corresponding buttonLabel as blank as well for seamless user experience. 
 * buttonLabel: Allows you to provide labels of your buttons on the dialog. The order of button labels is same as that of your button types.
 * autoScrollBodyContent: When set to true, gives you a vertical scroll on the dialog for its content.
 * customContentStyle: Allows you to override default styling with your custom styling.
