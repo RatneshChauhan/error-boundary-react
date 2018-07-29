@@ -16,6 +16,8 @@ interface Props {
   modal: boolean;
   autoScrollBodyContent: boolean;
   customContentStyle: any;
+  onClick: any;
+  closeOnClick: boolean;
 }
 
 export default class ErrorBoundary extends React.Component<Props, State> {
@@ -38,7 +40,7 @@ export default class ErrorBoundary extends React.Component<Props, State> {
       return (
         <div style={this.style}>
           <MuiThemeProvider>
-            <Dialog title={<div style={this.style}>{this.props.errorTitle}</div>} body={this.props.errorText} buttonType={this.props.buttonType} buttonLabel={this.props.buttonLabel} modal={this.props.modal} autoScrollBodyContent={this.props.autoScrollBodyContent} customContentStyle={this.props.customContentStyle} />
+            <Dialog title={<div style={this.style}>{this.props.errorTitle}</div>} body={this.props.errorText} buttonType={this.props.buttonType} buttonLabel={this.props.buttonLabel} onClick={this.props.onClick} closeOnClick={this.props.closeOnClick} modal={this.props.modal} autoScrollBodyContent={this.props.autoScrollBodyContent} customContentStyle={this.props.customContentStyle} />
           </MuiThemeProvider>
         </div>);
     } else {

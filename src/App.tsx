@@ -11,6 +11,10 @@ class App extends React.Component {
     width: '100%',
     maxWidth: 'none',
     };
+
+    handleClick = () => {
+      alert('you clicked me!');
+    } 
     
   render() {
     return (
@@ -20,7 +24,7 @@ class App extends React.Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <p className="App-intro">
-        <ErrorBoundary headerColor="lightseagreen" errorTitle="Error Boundary" errorText="Ooops! Something went wrong!" buttonType={['default', 'primary', 'secondary', 'disabled']} buttonLabel={['Ok', 'Continue', 'Close', 'Cancel']} modal={true} autoScrollBodyContent={false} customContentStyle={null}>
+        <ErrorBoundary headerColor="lightseagreen" errorTitle="Error Boundary" errorText="Ooops! Something went wrong!" buttonType={['default', 'primary', 'secondary', 'disabled']} buttonLabel={['Ok', 'Continue', 'Close', 'Cancel']} onClick={this.handleClick} closeOnClick={true} modal={false} autoScrollBodyContent={false} customContentStyle={null}>
           <TestErrorComponent />
         </ErrorBoundary>
         </p>   
