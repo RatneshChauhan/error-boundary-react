@@ -18,7 +18,7 @@ Error boundaries are React components that catch JavaScript errors anywhere in t
 Usage
 ==========================
  
- <pre><span class="pl-k">import</span><span class="pl-smi"> ErrorBoundary</span><span class="pl-k"> from</span> <span class="pl-s"><span class="pl-pds">'</span>react-error-boundary-component-fallback<span class="pl-pds">'</span></span>;
+ <pre><span class="pl-k">import</span><span class="pl-smi"> ErrorBoundary</span><span class="pl-k"> from</span> <span class="pl-s"><span class="pl-pds">'</span>react-error-boundary-component-fallback2<span class="pl-pds">'</span></span>;
 
 &lt;<span class="pl-ent"><span class="pl-c1">ErrorBoundary headerColor="lightseagreen" errorTitle="Error" errorText="Ooops! Something went wrong!" buttonType={['default', 'primary', 'secondary', 'disabled']} buttonLabel={['Ok', 'Continue', 'Close', 'Cancel']} modal={true} autoScrollBodyContent={false} customContentStyle={null}</span></span>&gt;
   &lt;<span class="pl-ent"><span class="pl-c1">Your-Component</span></span> /&gt;
@@ -28,6 +28,8 @@ Usage
 * buttonLabel: Allows you to provide labels of your buttons on the dialog. The order of button labels is same as that of your button types.
 * autoScrollBodyContent: When set to true, gives you a vertical scroll on the dialog for its content.
 * customContentStyle: Allows you to override default styling with your custom styling.
+* onClick: Allows you to call a function
+* closeOnClick: Allows to decide whther to close error dialog on click of a button. Defaulted to false.
  
 
 When error occurs during rendering, in lifecycle methods, and in constructors of the whole tree below them, a material-ui error dialog appears to the end user
@@ -41,7 +43,7 @@ Fall back UI will be visible in Production mode. In Develoment mode, you will se
 Published as npm package
 ================
 This is available as an npm package.
-Run <code>npm i react-error-boundary-component-fallback</code> to install it.
+Run <code>npm i react-error-boundary-component-fallback2</code> to install it.
 
 Author
 =============

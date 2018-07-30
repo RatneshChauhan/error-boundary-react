@@ -15,24 +15,33 @@ export default class ErrorDialogComponent extends React.Component {
     this.setState({ open: false });
   }
 
+  handleClose  ()  {
+
+    if (this.props.closeOnClick) {
+      this.setState({ open: false });
+    }
+
+  }
+
   render() {
 
     this.props.buttonType.map((item, i) => {
+      
       if (item === 'default') {
         this.state.actions.push(
-          [<FlatButton key="" label={this.props.buttonLabel[i]} onClick={this.handleClose} />]);
+          [<FlatButton key="" label={this.props.buttonLabel[i]} onClick={this.props.onClick} onClickCapture={this.handleClose}/>]);
       }
       if (item === 'primary') {
         this.state.actions.push(
-          [<FlatButton key="" label={this.props.buttonLabel[i]} primary={true} onClick={this.handleClose} />]);
+          [<FlatButton key="" label={this.props.buttonLabel[i]} primary={true} onClick={this.props.onClick} onClickCapture={this.handleClose} />]);
       }
       if (item === 'secondary') {
         this.state.actions.push(
-          [<FlatButton key="" label={this.props.buttonLabel[i]} secondary={true} onClick={this.handleClose} />]);
+          [<FlatButton key="" label={this.props.buttonLabel[i]} secondary={true} onClick={this.props.onClick} onClickCapture={this.handleClose} />]);
       }
       if (item === 'disabled') {
         this.state.actions.push(
-          [<FlatButton key="" label={this.props.buttonLabel[i]} disabled={true} onClick={this.handleClose} />]);
+          [<FlatButton key="" label={this.props.buttonLabel[i]} disabled={true} onClick={this.props.onClick} onClickCapture={this.handleClose} />]);
       }
     });
 

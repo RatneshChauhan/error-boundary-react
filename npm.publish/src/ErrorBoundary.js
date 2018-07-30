@@ -17,12 +17,11 @@ export default class ErrorBoundary extends React.Component{
   render() {
     if (this.state.hasError) {
       return (
-        <div>
+        <div style={this.style}>
           <MuiThemeProvider>
-            <Dialog title={<div style={{backgroundColor: this.props.headerColor}}>{this.props.errorTitle}</div>} body={this.props.errorText} buttonType={this.props.buttonType} buttonLabel={this.props.buttonLabel} modal={this.props.modal} autoScrollBodyContent={this.props.autoScrollBodyContent} customContentStyle={this.props.customContentStyle} />
+            <Dialog title={<div style={this.style}>{this.props.errorTitle}</div>} body={this.props.errorText} buttonType={this.props.buttonType} buttonLabel={this.props.buttonLabel} onClick={this.props.onClick} closeOnClick={this.props.closeOnClick} modal={this.props.modal} autoScrollBodyContent={this.props.autoScrollBodyContent} customContentStyle={this.props.customContentStyle} />
           </MuiThemeProvider>
-        </div>
-		);
+        </div>);
     } else {
       return this.props.children;
 

@@ -18,16 +18,18 @@ Error boundaries are React components that catch JavaScript errors anywhere in t
 Usage
 ==========================
  
- <pre><span class="pl-k">import</span><span class="pl-smi"> ErrorBoundary</span><span class="pl-k"> from</span> <span class="pl-s"><span class="pl-pds">'</span>react-error-boundary-component-fallback<span class="pl-pds">'</span></span>;
+ <pre><span class="pl-k">import</span><span class="pl-smi"> ErrorBoundary</span><span class="pl-k"> from</span> <span class="pl-s"><span class="pl-pds">'</span>react-error-boundary-component-fallback2<span class="pl-pds">'</span></span>;
 
 &lt;<span class="pl-ent"><span class="pl-c1">ErrorBoundary headerColor="lightseagreen" errorTitle="Error" errorText="Ooops! Something went wrong!" buttonType={['default', 'primary', 'secondary', 'disabled']} buttonLabel={['Ok', 'Continue', 'Close', 'Cancel']} modal={true} autoScrollBodyContent={false} customContentStyle={null}</span></span>&gt;
   &lt;<span class="pl-ent"><span class="pl-c1">Your-Component</span></span> /&gt;
 &lt;/<span class="pl-ent"><span class="pl-c1">ErrorBoundary</span></span>&gt;</pre>
 
-* buttonType: Allows you to decide which button you want on the error dialog. You can keep one, two... or all. Simply provide a blank value for the button type you don't want on the dialog. Make sure to set the corresponding buttonLabel as blank as well for seamless user experience. 
+* buttonType: Allows you to decide which button you want on the error dialog. You can keep one or all. Simply provide a blank value for the button type you don't want on the dialog
 * buttonLabel: Allows you to provide labels of your buttons on the dialog. The order of button labels is same as that of your button types.
 * autoScrollBodyContent: When set to true, gives you a vertical scroll on the dialog for its content.
 * customContentStyle: Allows you to override default styling with your custom styling.
+* onClick: Allows you to call a function
+* closeOnClick: Allows to decide whther to close error dialog on click of a button. Defaulted to false.
  
 
 When error occurs during rendering, in lifecycle methods, and in constructors of the whole tree below them, a material-ui error dialog appears to the end user
@@ -41,9 +43,7 @@ Fall back UI will be visible in Production mode. In Develoment mode, you will se
 Published as npm package
 ================
 This is available as an npm package.
-Run <code>npm i react-error-boundary-component-fallback</code> to install it.
-
-https://www.npmjs.com/package/react-error-boundary-component-fallback
+Run <code>npm i react-error-boundary-component-fallback2</code> to install it.
 
 Author
 =============
