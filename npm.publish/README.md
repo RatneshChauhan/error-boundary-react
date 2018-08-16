@@ -18,9 +18,9 @@ Error boundaries are React components that catch JavaScript errors anywhere in t
 Usage
 ==========================
  
- <pre><span class="pl-k">import</span><span class="pl-smi"> ErrorBoundary</span><span class="pl-k"> from</span> <span class="pl-s"><span class="pl-pds">'</span>react-error-boundary-component-fallback2<span class="pl-pds">'</span></span>;
+ <pre><span class="pl-k">import</span><span class="pl-smi"> ErrorBoundary</span><span class="pl-k"> from</span> <span class="pl-s"><span class="pl-pds">'</span>react-error-boundary-component-fallback3<span class="pl-pds">'</span></span>;
 
-&lt;<span class="pl-ent"><span class="pl-c1">ErrorBoundary headerColor="lightseagreen" errorTitle="Error" errorText="Ooops! Something went wrong!" buttonType={['default', 'primary', 'secondary', 'disabled']} buttonLabel={['Ok', 'Continue', 'Close', 'Cancel']} modal={true} autoScrollBodyContent={false} customContentStyle={null}</span></span>&gt;
+&lt;<span class="pl-ent"><span class="pl-c1">ErrorBoundary headerColor="lightseagreen" errorTitle="Error" errorText="Ooops! Something went wrong!" buttonType={['default', 'primary', 'secondary', 'disabled']} buttonLabel={['Ok', 'Continue', 'Close', 'Cancel']} onClick={'function-to-be-called'} closeOnClick={false} modal={true} autoScrollBodyContent={false} customContentStyle={null}</span></span>&gt;
   &lt;<span class="pl-ent"><span class="pl-c1">Your-Component</span></span> /&gt;
 &lt;/<span class="pl-ent"><span class="pl-c1">ErrorBoundary</span></span>&gt;</pre>
 
@@ -43,7 +43,7 @@ Fall back UI will be visible in Production mode. In Develoment mode, you will se
 Published as npm package
 ================
 This is available as an npm package.
-Run <code>npm i react-error-boundary-component-fallback2</code> to install it.
+Run <code>npm i react-error-boundary-component-fallback3</code> to install it.
 
 Author
 =============
